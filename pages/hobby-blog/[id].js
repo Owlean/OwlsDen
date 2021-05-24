@@ -16,7 +16,7 @@ export default function Post({ postData }) {
       <>
         <Flex flexDirection="column">
         <Center className={postStyles.hobbyPostHeader}>
-            <Box padding="1em"><Image src="/icons/contour-de-vue-cote-hibou.svg" height={80} width={80} alt="Owl" /></Box> 
+            <Box padding="0.3em"><Image src="/icons/contour-de-vue-cote-hibou-retourne.svg" height={80} width={80} alt="Owl" /></Box> 
                 <Heading as="h1" >{postData.title}</Heading>
             <Box padding="1em"><Image src="/icons/contour-de-vue-cote-hibou.svg" height={80} width={80} alt="Owl" /></Box> 
         </Center>
