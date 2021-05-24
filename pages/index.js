@@ -9,7 +9,7 @@ export default function Home() {
   return (
     // <Flex flexDirection="column" flexFlow="column">
     //   <Header title="Welcome to the owls' den" icon="/icons/hibou.webp"></Header>
-    <Layout title="Welcome to the owls' den" icon="/icons/hibou.webp">  
+    <Layout title="Welcome to the owls' den" icon1="/icons/hibou.webp" icon2="/icons/hibou.webp">  
       <Spinner></Spinner>
     </Layout>
       // <Footer></Footer>

@@ -6,11 +6,11 @@ import { Flex } from "@chakra-ui/react"
 
 
 
-const Layout = ({ title ,children, icon }) => {
+const Layout = ({ title ,children, icon1, icon2 }) => {
   return(
     <>
       <Flex flexDirection="column" flexFlow="column">
-        <Header title={title} icon={icon}></Header>
+        <Header title={title} icon1={icon1} icon2={icon2}></Header>
         <Flex minHeight="90vh" justifyContent="center" alignItems="center">
           {children}
         </Flex>

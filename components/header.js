@@ -12,9 +12,9 @@ const Header = (props) => {
         </Head>
         <main className={styles.main}>
             <Flex>
-                <Box><Image src={props.icon} height={80} width={80} alt="Owl" /></Box> 
-                    <Heading className={styles.title}>{props.title}</Heading>
-                <Box><Image src={props.icon} height={80} width={80} alt="Owl" /></Box> 
+                <Box><Image src={props.icon1} height={80} width={80} alt="Owl" /></Box> 
+                    <Heading fontSize="80px" fontFamily="cursive" className={styles.heading}>{props.title}</Heading>
+                <Box marginLeft="1.5em"><Image src={props.icon2} height={80} width={80} alt="Owl" /></Box> 
             </Flex>
         </main>
         </>

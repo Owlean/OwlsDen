@@ -8,7 +8,7 @@ import ToHome from "../../components/toHome"
 import { Button } from '@chakra-ui/button'
 
 export default function Post({ postData }) {
-  const [position, setPosition] = useState("center");
+  const [position, setPosition] = useState("left");
   const HandleClick = () => {
     (position == "center" ? setPosition("left") : setPosition("center"));
   }
@@ -31,10 +31,10 @@ export default function Post({ postData }) {
         </Center>
         <ToHome></ToHome>
           {/* <Date dateString={postData.date} /> */}  
-          <Flex >
-            <Text width="100%" marginRight="7%" marginLeft="15%" marginTop="2em" marginBottom="2em">   
+          <Flex marginBottom="20em">
+            <Text overflow="hidden" width="100%" marginRight="7%" marginLeft="15%" marginTop="2em" marginBottom="2em">   
               <Flex>
-                <Text width="100%" textAlign={position} className={postStyles.hobbyPost} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <Text width="85%" textAlign={position} className={postStyles.hobbyPost} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 <Button 
                   border = "0px"
                   _active={{ bg: "#d1af76",transform: "scale(1.2)", boxShadow: "none", borderColor: "d1af76"}} 
@@ -47,13 +47,17 @@ export default function Post({ postData }) {
                   borderColor="#d1af76"
                   boxShadow="none"
                   onClick={()=>HandleClick()} 
-                  marginTop="1em" textAlign="right">{position == "center" ? "To Left" : "Center"}
+                  marginTop="1em" 
+                  marginRight="3%"
+                  marginLeft="2%" 
+                  textAlign="right">
+                    {position == "center" ? "To Left" : "Center"}
                 </Button>
               </Flex>
             </Text>
           </Flex>
-        </Flex>
         <Footer></Footer>
+        </Flex>
       </>
     )
   }

@@ -10,7 +10,7 @@ export default function Footer() {
             // gap={6}
             >
             <Center>
-            <HStack bottom="5%" position="absolute" align="center" spacing="5px" >
+            <HStack bottom="10em" position="absolute" align="center" spacing="5px" >
                 <Box>
                     <Image src="/icons/hibouFooter.png" height={10} width={10} alt="hibou"/>
                 </Box>
