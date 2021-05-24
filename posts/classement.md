@@ -6,33 +6,33 @@ date: 21 Aout 2021
 
 # SSS
 
-* tokyo ghoul
+* Tokyo ghoul
   
 # SS
 
-- one piece
-- naruto 
-- full metal alchimist: brotherhood
+- One piece
+- Naruto 
+- Full metal alchimist: brotherhood
 - HxH
-- snk / atack on titan
-- deathnote
-- dragon ball
+- SNK / Attack on titan
+- Deathnote
+- Dragon ball
   
 # S
 
-* death parade (les deux derniers ep sont style)
-* my hero academia
-* fairy tail
-* boruto
-* bleach
-* dbz
+* Death parade (les deux derniers ep sont style)
+* My hero academia
+* Fairy tail
+* Boruto
+* Bleach
+* DBZ
 
 # A
 
 * 7 deadly sins
-* the heroik legend of aslan 
+* The heroik legend of aslan 
 
 
 # B
 
-* one punch man
+* One punch man

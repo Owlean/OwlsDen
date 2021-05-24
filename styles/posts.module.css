@@ -15,6 +15,7 @@
     text-shadow: 1px 1px 0 #000;
     color: #217969; 
     font-family: cursive; 
+    text-transform: uppercase;
     text-align: center; 
     text-shadow: 1px 1px 2px #082b34;
 }
@@ -77,6 +78,16 @@
     text-transform: uppercase; 
     /* text-align: left;  */
   }
+
+  .hobbyPost h3 a {
+    color: black; 
+    margin-top: 1em;
+    font-family: "Great Vibes";  
+    font-size: 30px; 
+    line-height: 40px; 
+    text-transform: uppercase; 
+    /* text-align: left;  */
+  }
   
   .hobbyPost p { 
     color: #7a7c7f; 
@@ -111,3 +122,20 @@
   }
   
   .hobbyPost a:hover { text-decoration: underline }
+
+
+.hobbyPostIndex a {
+  color: #d1af76; 
+  font-size: 20px; 
+  font-family: "Great Vibes";
+  text-transform: uppercase; 
+  line-height: 40px; 
+  font-weight: normal; 
+  /* text-align: left;  */
+  text-shadow: 0 1px 1px #fff; 
+}
+
+.hobbyPostIndex a:hover {
+   text-decoration: underline;
+   color: #1e847f;
+}
