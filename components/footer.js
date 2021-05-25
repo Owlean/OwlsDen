@@ -15,7 +15,7 @@ export default function Footer() {
                     <Image src="/icons/hibouFooter.png" height={10} width={10} alt="hibou"/>
                 </Box>
                 <Spacer/>
-                    <Text fontSize="2xs" height="15" >
+                    <Text fontSize={{ base: "10px", md: "20px", lg: "2xs" }} height="15" >
                         Le succès vient de la curiosité, de la concentration, de la persévérance et de l'autocritique.
                     </Text>
             </HStack>

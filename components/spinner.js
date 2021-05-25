@@ -29,12 +29,12 @@ const Spinner = (props) => {
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
                     <Link href="/">
-                        <Image  style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/contour-de-dessin-anime-de-hibou.svg" height={50} width={50} />
+                        <Image  style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/contour-de-dessin-anime-de-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
                 <Flex>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/basile-nonclercq/">
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/logo-linkedin.svg" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/logo-linkedin.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </a>
                 </Flex>
             </Flex>
@@ -44,24 +44,24 @@ const Spinner = (props) => {
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
                     <Flex >
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/BasileNq">
-                            <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/signe-github.svg" height={50} width={50} />
+                            <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/signe-github.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                         </a>
                     </Flex>
                     <Flex >
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/contour-de-vue-cote-hibou.svg" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/contour-de-vue-cote-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Flex>
                 </Flex>
                 {/* cricle */}
                 <Flex alignSelf="center">
-                    <Image style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/circle.svg" onClick={()=>Space()} height={500} width={500} />
+                    <Image style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/circle.svg" onClick={()=>Space()} height={{ base: 200, md: 300, lg:500 }} width={{ base: 200, md: 300, lg:500 }} />
                 </Flex>
                 {/* bottom icons */}
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
                     <Flex  >
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Flex>
                     <Flex >
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/blog.svg" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/blog.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Flex>
                 </Flex>
             </Flex>
@@ -69,12 +69,12 @@ const Spinner = (props) => {
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
                     <Link href="CVNonclercqBasileG.pdf">
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/cv-et-cv.svg" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/cv-et-cv.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
                 <Flex>
                     <Link href="/hobby-blog/">
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/hibouFooter.png" height={50} width={50} />
+                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/hibouFooter.png" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
             </Flex>

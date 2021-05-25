@@ -25,3 +25,19 @@ a {
   to {transform:rotate(0deg);}
 }
 
+@media (max-width: 500px) { 
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(0deg);}
+  }
+  
+  @keyframes reversespin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(360deg);}
+  }
+
+  .h1{
+    color: aqua;
+  }
+
+}

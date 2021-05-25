@@ -4,7 +4,6 @@ import Spinner from "../components/spinner"
 import Header from "../components/header"
 import Layout from "../components/layout"
 
-
 export default function Home() {
   return (
     // <Flex flexDirection="column" flexFlow="column">
