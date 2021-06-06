@@ -9,4 +9,4 @@ Date: February 2021
 
 # Work
 
-[Short report](../public/AzureProject.pdf)
+[Short report](/AzureProject.pdf)

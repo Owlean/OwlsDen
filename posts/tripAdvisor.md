@@ -24,18 +24,18 @@ Trip Advisor light
 
 ## Pictures
 
-![Home](../public/images/tripAdvisor/Home.png)
-![Details](../public/images/tripAdvisor/details.png)
-![Register part 1](../public/images/tripAdvisor/register1.png)
-![Register part 2](../public/images/tripAdvisor/register2.png)
-![Once Registered](../public/images/tripAdvisor/register3.png)
-![Comment part 1](../public/images/tripAdvisor/comment.png)
-![Comment part 2](../public/images/tripAdvisor/comment2.png)
-![Once Commented](../public/images/tripAdvisor/details2.png)
-![Add an ad part 1](../public/images/tripAdvisor/addAd1.png)
-![Add an ad part 2](../public/images/tripAdvisor/addAd2.png)
-![Home again](../public/images/tripAdvisor/home2.png)
-![Search Bar](../public/images/tripAdvisor/searchBar.png)
-![Profile](../public/images/tripAdvisor/profile.png)
+![Home](/images/tripAdvisor/Home.png)
+![Details](/images/tripAdvisor/details.png)
+![Register part 1](/images/tripAdvisor/register1.png)
+![Register part 2](/images/tripAdvisor/register2.png)
+![Once Registered](/images/tripAdvisor/register3.png)
+![Comment part 1](/images/tripAdvisor/comment.png)
+![Comment part 2](/images/tripAdvisor/comment2.png)
+![Once Commented](/images/tripAdvisor/details2.png)
+![Add an ad part 1](/images/tripAdvisor/addAd1.png)
+![Add an ad part 2](/images/tripAdvisor/addAd2.png)
+![Home again](/images/tripAdvisor/home2.png)
+![Search Bar](/images/tripAdvisor/searchBar.png)
+![Profile](/images/tripAdvisor/profile.png)
 
 
