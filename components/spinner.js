@@ -24,7 +24,7 @@ const Spinner = (props) => {
     }
     return(
         // Glocal Flex -> Rox direction 
-        <Flex alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" >
+        <Flex alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
             {/* Left icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
@@ -60,7 +60,9 @@ const Spinner = (props) => {
                 {/* bottom icons */}
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
                     <Flex  >
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        <Link href="/work-blog/" as="Work">    
+                            <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        </Link>                            
                     </Flex>
                     <Flex >
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/blog.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />

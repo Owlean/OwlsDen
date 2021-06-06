@@ -15,10 +15,10 @@ const ToHome = (props) => {
     } 
     return(
         <Center>
-            <Box onMouseEnter={()=>handleColor()} onMouseLeave={()=>handleColor()}>
+            <Box  onMouseEnter={()=>handleColor()} onMouseLeave={()=>handleColor()}>
             <Link href="/"  >
                 {/* <Image src="/icons/homeOwl.png" height={200} width={200} title="Go to Home" alt="HOME"></Image> */}
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"     
+                <svg cursor="pointer" version="1.0" xmlns="http://www.w3.org/2000/svg"     
                     width="128pt" height="71,8pt" viewBox="0 0 1280.000000 718.000000"
                     preserveAspectRatio="xMidYMid meet">
                     <title>Go to Home</title>
@@ -35,10 +35,10 @@ const ToHome = (props) => {
                         </stop>
                     </linearGradient>  */}
                     <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
-                        <stop offset="0%" stop-color="#7A5FFF">
+                        <stop offset="0%" stopColor="#7A5FFF">
                             <animate attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="4s" repeatCount="indefinite"></animate>
                         </stop>
-                        <stop offset="100%" stop-color="#01FF89">
+                        <stop offset="100%" stopColor="#01FF89">
                             <animate attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="4s" repeatCount="indefinite"></animate>
                         </stop>
                     </linearGradient> 
