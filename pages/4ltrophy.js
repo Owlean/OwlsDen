@@ -2,6 +2,7 @@ import {Image, Box, Flex, Spacer, Center, Text} from "@chakra-ui/react";
 import Header from "../components/header"
 import Footer from "../components/footer"
 import {getNbPictures} from "../lib/trophy"
+import ToHome from "../components/toHome"
 
 
 export async function getStaticProps(){
@@ -17,6 +18,7 @@ const Trophy = ({images}) => {
     return (
         <>
         <Header title="Raid: 4L Trophy" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header>
+        <ToHome></ToHome>
         <Center>
             <Flex width="80%" flexDirection="column">
             {images.map((src, index) => (
