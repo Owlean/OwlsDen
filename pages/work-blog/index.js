@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
           <Heading marginBottom="1em" >Articles</Heading>
             {allPostsData.map(({ id, date, title }) => (
               <div  className={styles.hobbyPostIndex} key={id}>
-                <Link href={`/hobby-blog/${id}`}>
+                <Link href={`/work-blog/${id}`}>
                   {title}
                 </Link>
                 <br />
@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData('/posts/hobby')
+  const allPostsData = getSortedPostsData('/posts/work')
   return {
     props: {
       allPostsData
