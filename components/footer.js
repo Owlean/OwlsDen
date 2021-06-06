@@ -5,7 +5,7 @@ export default function Footer() {
         <Grid
             maxW="full"
             width="full"
-            height="50vh"
+            height="10vh"
             // templateColumns="repeat(2, 1fr)"
             // gap={6}
             >

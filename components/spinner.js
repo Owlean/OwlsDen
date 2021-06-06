@@ -5,16 +5,16 @@ import Link from "next/link"
 
 const Spinner = (props) => {
     const [space, setSpace] = useState(false);
-    const [rotation, setRotation] = useState(9);
-    const [rotation2, setRotation2] = useState(9);
+    const [rotation, setRotation] = useState(15);
+    const [rotation2, setRotation2] = useState(15);
     // const rotate = () => {
     //     setRotation(rotation+5)
     // }
 
     const Space = () =>{
         if (space) {
-            setRotation(9);
-            setRotation2(9);
+            setRotation(15);
+            setRotation2(15);
             setSpace(false);
         }else{
             setRotation(3);
@@ -48,7 +48,9 @@ const Spinner = (props) => {
                         </a>
                     </Flex>
                     <Flex >
-                        <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/contour-de-vue-cote-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        <Link href="/4ltrophy" as="4L Trophy">
+                            <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/contour-de-vue-cote-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        </Link>
                     </Flex>
                 </Flex>
                 {/* cricle */}
@@ -68,12 +70,12 @@ const Spinner = (props) => {
             {/* right icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
-                    <Link href="CVNonclercqBasileG.pdf">
+                    <Link href="CVNonclercqBasileG.pdf" as="CV">
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/cv-et-cv.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
                 <Flex>
-                    <Link href="/hobby-blog/">
+                    <Link href="/hobby-blog/" as="Mess Blog">
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/hibouFooter.png" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
