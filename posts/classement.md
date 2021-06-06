@@ -7,6 +7,7 @@ date: 21 Aout 2021
 # SSS
 
 * Tokyo ghoul
+- Bakuman
   
 # SS
 
@@ -23,6 +24,7 @@ date: 21 Aout 2021
 * Death parade (les deux derniers ep sont style)
 * My hero academia
 * Fairy tail
+* DBS
 * Boruto
 * Bleach
 * DBZ
@@ -32,7 +34,6 @@ date: 21 Aout 2021
 * The promise neverland
 * 7 deadly sins
 * The heroik legend of aslan 
-
 
 # B
 
