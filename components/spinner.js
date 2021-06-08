@@ -60,7 +60,7 @@ const Spinner = (props) => {
                 {/* bottom icons */}
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
                     <Flex  >
-                        <Link href="/work-blog/" as="Work">    
+                        <Link href="/work-blog/">    
                             <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                         </Link>                            
                     </Flex>
@@ -77,7 +77,7 @@ const Spinner = (props) => {
                     </Link>
                 </Flex>
                 <Flex>
-                    <Link href="/hobby-blog/" as="Mess Blog">
+                    <Link href="/hobby-blog/">
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/hibouFooter.png" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>

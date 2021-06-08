@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box, Center} from "@chakra-ui/react"
+import { Flex, Heading, Text, Box, Center, Spacer} from "@chakra-ui/react"
 import Footer from "../../components/footer"
 import Header from "../../components/header"
 import ToHome from "../../components/toHome"
@@ -15,12 +15,12 @@ export default function Home({ allPostsData }) {
         <Header title="Welcome to the mess blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header>
         <ToHome></ToHome>
         <Center>
-        <Box marginTop="2em" textAlign="center" width="60%" className={`${styles.headingMd} ${styles.padding1px}`}>
-          <Heading marginBottom="1em" >Articles</Heading>
+        <Box marginTop="2em" textAlign="center" width="60%" className={`${styles.hobbyPost} ${styles.padding1px}`}>
+          <Heading marginBottom="2em" >Articles</Heading>
             {allPostsData.map(({ id, date, title }) => (
               <div  className={styles.hobbyPostIndex} key={id}>
                 <Link href={`/hobby-blog/${id}`}>
-                  {title}
+                <Heading as="h3">{title}</Heading>
                 </Link>
                 <br />
                 <span>{date}</span>
@@ -28,6 +28,7 @@ export default function Home({ allPostsData }) {
             ))}
         </Box>
         </Center>
+        <Spacer height="40vh"></Spacer>
         <Footer></Footer>
     {/* </Flex> */}
     </>

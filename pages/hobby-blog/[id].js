@@ -50,7 +50,8 @@ export default function Post({ postData }) {
                   marginTop="1em" 
                   marginRight="3%"
                   marginLeft="2%" 
-                  textAlign="right">
+                  textAlign="right"
+                  fontSize={{ base: "10px", md: "20px", lg: "2xs" }}>
                     {position == "center" ? "To Left" : "Center"}
                 </Button>
               </Flex>

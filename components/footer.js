@@ -11,7 +11,7 @@ export default function Footer() {
             >
             <Center>
             {/* <HStack bottom="10em" position="absolute" align="center" spacing="5px" > */}
-            <HStack  align="center" >
+            <HStack   align="center" >
                 <Box>
                     <Image src="/icons/hibouFooter.png" height={10} width={10} alt="hibou"/>
                 </Box>
