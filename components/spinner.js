@@ -48,7 +48,7 @@ const Spinner = (props) => {
                         </a>
                     </Flex>
                     <Flex >
-                        <Link href="/4ltrophy" as="4L Trophy">
+                        <Link href="/4ltrophy">
                             <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}   src="/icons/contour-de-vue-cote-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                         </Link>
                     </Flex>
@@ -72,7 +72,7 @@ const Spinner = (props) => {
             {/* right icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
-                    <Link href="CVNonclercqBasileG.pdf">
+                    <Link href="cv.pdf">
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/cv-et-cv.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
