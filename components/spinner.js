@@ -72,7 +72,7 @@ const Spinner = (props) => {
             {/* right icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex >
-                    <Link href="CVNonclercqBasileG.pdf" as="CV">
+                    <Link href="CVNonclercqBasileG.pdf">
                         <Image style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/cv-et-cv.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Link>
                 </Flex>
