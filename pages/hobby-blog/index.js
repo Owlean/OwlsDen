@@ -19,16 +19,15 @@ export default function Home({ allPostsData }) {
           <Heading marginBottom="2em" >Articles</Heading>
             {allPostsData.map(({ id, date, title }) => (
               <div  className={styles.hobbyPostIndex} key={id}>
-                <Link href={`/hobby-blog/${id}`}>
-                <Heading as="h3">{title}</Heading>
+                <Link  href={`/hobby-blog/${id}`} >
+                <Heading cursor="pointer" as="h2" >{title}</Heading>
                 </Link>
-                <br />
                 <span>{date}</span>
               </div>
             ))}
         </Box>
         </Center>
-        <Spacer height="40vh"></Spacer>
+        <Spacer height="30vh"></Spacer>
         <Footer></Footer>
     {/* </Flex> */}
     </>
