@@ -6,6 +6,7 @@ import { Flex, Heading, Center, Box, Text } from '@chakra-ui/layout'
 import Footer from "../../components/footer"
 import ToHome from "../../components/toHome"
 import { Button } from '@chakra-ui/button'
+import Layout from '../../components/layout'
 
 export default function Post({ postData }) {
   const [position, setPosition] = useState("left");
@@ -13,13 +14,13 @@ export default function Post({ postData }) {
     (position == "center" ? setPosition("left") : setPosition("center"));
   }
     return (
-      <>
-        <Flex flexDirection="column">
-        <Center className={postStyles.hobbyPostHeader}>
+      <Layout style={postStyles.hobbyPostHeader} title={postData.title} icon1="/icons/contour-de-vue-cote-hibou-retourne.svg" icon2="/icons/contour-de-vue-cote-hibou.svg">
+        <Flex flexDirection="column" width="200vh">
+        {/* <Center className={postStyles.hobbyPostHeader}>
             <Box padding="0.3em"><Image src="/icons/contour-de-vue-cote-hibou-retourne.svg" height={80} width={80} alt="Owl" /></Box> 
                 <Heading as="h1" >{postData.title}</Heading>
             <Box padding="1em"><Image src="/icons/contour-de-vue-cote-hibou.svg" height={80} width={80} alt="Owl" /></Box> 
-        </Center>
+        </Center> */}
         <Center className={postStyles.hobbyPostHeader} marginBottom="2em">
             <strong>
                 By  {postData.author}
@@ -57,9 +58,8 @@ export default function Post({ postData }) {
               </Flex>
             </Text>
           </Flex>
-        <Footer></Footer>
         </Flex>
-      </>
+        </Layout>
     )
   }
   

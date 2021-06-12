@@ -6,13 +6,14 @@ import Image from "next/image";
 import Link from 'next/link'
 import styles from '../../styles/posts.module.css'
 import { getSortedPostsData } from '../../lib/posts'
+import Layout from "../../components/layout";
 
 
 export default function Home({ allPostsData }) {
   return (
-    <>
-    {/* <Flex flexDirection="column" flexFlow="column"> */}
-        <Header title="Welcome to the mess blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header>
+    <Layout  title="Welcome to the mess blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp">
+    <Flex width="200vh" flexDirection="column">
+        {/* <Header title="Welcome to the mess blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header> */}
         <ToHome></ToHome>
         <Center>
         <Box marginTop="2em" textAlign="center" width="60%" className={`${styles.hobbyPost} ${styles.padding1px}`}>
@@ -27,10 +28,9 @@ export default function Home({ allPostsData }) {
             ))}
         </Box>
         </Center>
-        <Spacer height="30vh"></Spacer>
-        <Footer></Footer>
-    {/* </Flex> */}
-    </>
+        {/* <Footer></Footer> */}
+    </Flex>
+    </Layout>
   )
 }
 
