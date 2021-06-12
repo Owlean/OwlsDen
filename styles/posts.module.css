@@ -49,10 +49,10 @@
     color: #d1af76; 
     font-size: 40px; 
     font-family: "Great Vibes";
-    margin-bottom: 0.2em;
+    margin-bottom: 0.8em;
     margin-top: 1em;
     text-transform: uppercase; 
-    line-height: 80px; 
+    line-height: 30px; 
     font-weight: normal; 
     /* text-align: left;  */
     text-shadow: 0 1px 1px #fff; 
@@ -60,11 +60,12 @@
   
   .hobbyPost h2 { 
     color: #c8ad7f ; 
-    font-size: 35px; 
+    font-size: 30px; 
     margin-top: 1em;
+    margin-bottom: 1em;
     font-family: "Great Vibes"; 
     text-transform: uppercase; 
-    line-height: 60px; 
+    line-height: 20px; 
     font-weight: normal; 
     /* text-align: left;  */
     text-shadow: 0 1px 1px #fff; 
@@ -74,8 +75,8 @@
     color: #c1ab99; 
     margin-top: 1em;
     font-family: "Great Vibes";  
-    font-size: 30px; 
-    line-height: 40px; 
+    font-size: 20px; 
+    line-height: 10px; 
     text-transform: uppercase; 
     /* text-align: left;  */
   }
@@ -84,8 +85,8 @@
     color: black; 
     margin-top: 1em;
     font-family: "Great Vibes";  
-    font-size: 30px; 
-    line-height: 40px; 
+    font-size: 20px; 
+    line-height: 10px; 
     text-transform: uppercase; 
     /* text-align: left;  */
   }
@@ -268,7 +269,7 @@ text-shadow: 0 1px 1px #fff;
 .hobbyPost a { 
 color: #990000; 
 text-decoration: none; 
-font-size: 0.65em;
+font-size: 0.62em;
 line-height: 1em; 
 }
 
