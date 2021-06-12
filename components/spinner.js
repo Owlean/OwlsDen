@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from "react";
 import {Flex, Image, Text} from "@chakra-ui/react"
+import MysteryQuestion from "./mysteryQuestion"
 import Link from "next/link"
 
 const Spinner = (props) => {
@@ -8,6 +9,7 @@ const Spinner = (props) => {
     const [rotation, setRotation] = useState(30);
     const [rotation2, setRotation2] = useState(30);
     const [text, setText] = useState("");
+    const [mysteryQuestion, setMysteryQuestion] = useState(false)
 
     // rotation disturbance
     const Space = () =>{
@@ -29,17 +31,22 @@ const Spinner = (props) => {
     const handleMaouseLeave = (textInput) => {
         setText("");
     }
+
+    const handleQuestion = () => {
+        mysteryQuestion == false ? setMysteryQuestion(true) : setMysteryQuestion(false);
+    }
     return(
         // Glocal Flex -> Rox direction 
         <>
-        <Text alignSelf="center" fontSize="5xl" color="black" fontFamily="cursive"  position="absolute" >{text}</Text>
-        <Flex alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
+        <Flex onClick={()=>handleQuestion()} display={mysteryQuestion == true ? "flex" : "none"}>
+            <MysteryQuestion/>
+        </Flex>
+        <Text display={mysteryQuestion == true ? "none" : "block"} alignSelf="center" fontSize="5xl" color="black" fontFamily="cursive"  position="absolute" >{text}</Text>
+        <Flex display={mysteryQuestion == true ? "none" : "flex"} alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
             {/* Left icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
-                <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("")} onMouseLeave={() => handleMaouseLeave()}>
-                    <Link href="/">
-                        <Image position="relative" top={{lg: "4vh"}} left={{lg: "4vh"}} style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/contour-de-dessin-anime-de-hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
-                    </Link>
+                <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Mystery Question")} onMouseLeave={() => handleMaouseLeave()} onClick={()=>handleQuestion()}>
+                    <Image position="relative" top={{lg: "4vh"}} left={{lg: "4vh"}} style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/contour-de-dessin-anime-de-hibou.svg"   height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                 </Flex>
                 <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Linkedin")} onMouseLeave={() => handleMaouseLeave()} >
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/basile-nonclercq/">
