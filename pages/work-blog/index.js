@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
   return (
     <>
     {/* <Flex flexDirection="column"> */}
-        <Header title="Welcome to the mess blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header>
+        <Header title="Welcome to the work blog of the owls' den" icon1="/icons/messOwl.webp" icon2="/icons/messOwl-return.webp"></Header>
         <ToHome></ToHome>
         <Center>
         <Box marginTop="2em" textAlign="center" width="60%" className={`${styles.hobbyPost} ${styles.padding1px}`}>
