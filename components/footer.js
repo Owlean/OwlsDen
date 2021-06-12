@@ -6,6 +6,8 @@ export default function Footer() {
             maxW="full"
             width="full"
             height="10vh"
+            position="relative"
+            bottom="0"
             // templateColumns="repeat(2, 1fr)"
             // gap={6}
             >
