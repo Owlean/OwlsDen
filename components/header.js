@@ -14,8 +14,8 @@ const Header = (props) => {
         <main className={styles.main}>
             <Flex>
                 <Box><Image src={props.icon1} height={80} width={80} alt="Owl" /></Box> 
-                    <Heading fontSize={{ base: "24px", md: "40px", lg: "80px" }} as="h1" fontFamily="cursive" className={styles.heading}>{props.title}</Heading>
-                <Box marginLeft="1.5em"><Image src={props.icon2} height={80} width={80} alt="Owl" /></Box> 
+                    <Heading paddingRight={{base: "0vh", md: "1vh", lg:"1.5vh"}} fontSize={{ base: "24px", md: "40px", lg: "80px" }} as="h1" fontFamily="cursive" className={styles.heading}>{props.title}</Heading>
+                <Box><Image src={props.icon2} height={80} width={80} alt="Owl" /></Box> 
             </Flex>
         </main>
         </>
