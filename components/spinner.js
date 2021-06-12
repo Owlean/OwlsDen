@@ -8,11 +8,10 @@ const Spinner = (props) => {
     const [rotation, setRotation] = useState(30);
     const [rotation2, setRotation2] = useState(30);
     const [text, setText] = useState("");
-    // const rotate = () => {
-    //     setRotation(rotation+5)
-    // }
 
+    // rotation disturbance
     const Space = () =>{
+        setText("");
         if (space) {
             setRotation(30);
             setRotation2(30);
@@ -33,7 +32,7 @@ const Spinner = (props) => {
     return(
         // Glocal Flex -> Rox direction 
         <>
-        <Text fontSize="5xl" color="black" fontFamily="cursive"  position="absolute" >{text}</Text>
+        <Text alignSelf="center" fontSize="5xl" color="black" fontFamily="cursive"  position="absolute" >{text}</Text>
         <Flex alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
             {/* Left icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
@@ -64,7 +63,7 @@ const Spinner = (props) => {
                     </Flex>
                 </Flex>
                 {/* cricle */}
-                <Flex alignSelf="center">
+                <Flex alignSelf="center" onMouseEnter={(textInput)=>handleMaouseEnter("SPACE")} onMouseLeave={() => handleMaouseLeave()}>
                     <Image style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/circle.svg" onClick={()=>Space()} height={{ base: 200, md: 300, lg:500 }} width={{ base: 200, md: 300, lg:500 }} />
                 </Flex>
                 {/* bottom icons */}
