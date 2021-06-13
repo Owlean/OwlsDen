@@ -10,8 +10,8 @@ const MysteryQuestion = (props) => {
         ["moto", "motorbike", "bike"].includes(value.toLowerCase())  ? setAnswer(true) : setAnswer(false);
     }
   return (
-    <Flex display="flex" height="75vh" width="100vw" justifyContent="center" alignItems="center" >
-        <Flex   display={typeof(answer) === 'string' ? "flex" : "none"}
+    <Flex onClick={()=>setAnswer("") && setValue("")} display="flex" height="75vh" width="100vw" justifyContent="center" alignItems="center" >
+        <Flex   onClick={e => e.stopPropagation()} display={typeof(answer) === 'string' ? "flex" : "none"}
                 flexDirection="column" 
                 justifyContent="center" 
                 alignItems="center" 
@@ -46,9 +46,9 @@ const MysteryQuestion = (props) => {
                     height="60vh" 
                     width="60vw"
                     height="60vh">
-            <Flex flexDir="column" justifyContent="center" alignItems="center" width="55vw" padding="2vw">
+            <Flex onClick={e => e.stopPropagation()} flexDir="column" justifyContent="center" alignItems="center" width="55vw" padding="2vw">
                 <Text alignSelf="center" fontSize={{base: "2xl", lg: "5xl"}}  fontFamily="fantasy"  textShadow="dark-lg" marginBottom="5vh">{answer == true ? "Nice job V" : "WRONG, correct answer:"}</Text>
-                <Image src="/images/moto.jpg" height="40vh" width="30vh" borderRadius="full" boxShadow="dark-lg"></Image>
+                <Image src="/images/moto2.jpg" height="40vh" width="30vh" borderRadius="full" boxShadow="dark-lg"></Image>
             </Flex>    
             <ToHome></ToHome>
         </Flex>
