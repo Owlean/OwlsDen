@@ -70,18 +70,18 @@ const Spinner = (props) => {
                     </Flex>
                 </Flex>
                 {/* cricle */}
-                <Flex alignSelf="center" onMouseEnter={(textInput)=>handleMaouseEnter("SPACE")} onMouseLeave={() => handleMaouseLeave()}>
+                <Flex borderRadius="full" alignSelf="center" onMouseEnter={(textInput)=>handleMaouseEnter("SPACE")} onMouseLeave={() => handleMaouseLeave()}>
                     <Image style={{animation: `reversespin ${rotation2}s linear infinite`}} src="/icons/circle.svg" onClick={()=>Space()} height={{ base: 200, md: 300, lg:500 }} width={{ base: 200, md: 300, lg:500 }} />
                 </Flex>
                 {/* bottom icons */}
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
-                    <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Work Blog")} onMouseLeave={() => handleMaouseLeave()}  >
-                        <Link href="/work-blog/">    
-                            <Image position="relative" left={{lg: "4vh"}} style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
-                        </Link>                            
-                    </Flex>
                     <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("")} onMouseLeave={() => handleMaouseLeave()}  >
-                        <Image position="relative" style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/blog.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        <Image position="relative" left={{lg: "4vh"}} style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                    </Flex>
+                    <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Work Blog")} onMouseLeave={() => handleMaouseLeave()}  >
+                        <Link href="/work-blog/"> 
+                            <Image position="relative" style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/blog.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                        </Link>
                     </Flex>
                 </Flex>
             </Flex>
