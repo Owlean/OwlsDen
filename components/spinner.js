@@ -9,7 +9,8 @@ const Spinner = (props) => {
     const [rotation, setRotation] = useState(30);
     const [rotation2, setRotation2] = useState(30);
     const [text, setText] = useState("");
-    const [mysteryQuestion, setMysteryQuestion] = useState(false)
+    const [mysteryQuestion, setMysteryQuestion] = useState(false);
+    const [joke,setJoke] = useState(false);
 
     // rotation disturbance
     const Space = () =>{
@@ -35,14 +36,21 @@ const Spinner = (props) => {
     const handleQuestion = () => {
         mysteryQuestion == false ? setMysteryQuestion(true) : setMysteryQuestion(false);
     }
+
+    const handleJoke =  e => {
+        joke ? setJoke(false) : setJoke(true);
+    }
     return(
         // Glocal Flex -> Rox direction 
         <>
+        <Flex  alignItems="center" justifyContent="center" onClick={()=>handleJoke()} display={joke ? "flex" : "none"}>
+            <Image borderRadius="10%" border="2px" borderColor="black" height={{lg: "70vh", base: "70vw"}} width={{lg: "100vh", base: "90vw"}} src="/images/owlJoke.png"/>
+        </Flex>
         <Flex onClick={()=>handleQuestion()} display={mysteryQuestion == true ? "flex" : "none"}>
             <MysteryQuestion/>
         </Flex>
         <Text display={mysteryQuestion == true ? "none" : "block"} alignSelf="center" fontSize="5xl" color="black" fontFamily="cursive"  position="absolute" >{text}</Text>
-        <Flex display={mysteryQuestion == true ? "none" : "flex"} alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
+        <Flex display={mysteryQuestion || joke  ? "none" : "flex"} alignSelf="center" style={{animation: `spin ${rotation}s linear infinite`}} flexDirection="row" cursor="pointer">
             {/* Left icons */}
             <Flex flexDirection="column" justifyContent="space-evenly">
                 <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Mystery Question")} onMouseLeave={() => handleMaouseLeave()} onClick={()=>handleQuestion()}>
@@ -75,8 +83,8 @@ const Spinner = (props) => {
                 </Flex>
                 {/* bottom icons */}
                 <Flex alignSelf="center"  w="100%" justifyContent="space-around">
-                    <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("")} onMouseLeave={() => handleMaouseLeave()}  >
-                        <Image position="relative" left={{lg: "4vh"}} style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
+                    <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Joke")} onMouseLeave={() => handleMaouseLeave()}  >
+                        <Image position="relative" left={{lg: "4vh"}} onClick={()=>handleJoke()} style={{animation: `reversespin ${rotation2}s linear infinite`}}  src="/icons/hibou.svg" height={{ base: 7, md: 25, lg:50 }} width={{ base: 7, md: 25, lg:50 }} />
                     </Flex>
                     <Flex boxSize={{lg:"10vh"}} onMouseEnter={(textInput)=>handleMaouseEnter("Work Blog")} onMouseLeave={() => handleMaouseLeave()}  >
                         <Link href="/work-blog/"> 

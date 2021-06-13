@@ -13,3 +13,4 @@ title: olw's website
 - Mystery question: part Done
 - Footer position -> bottom: Done
 - Spinner icons -> onclick feature animation
+- Size ToHome component -> increase/deacrease with props
