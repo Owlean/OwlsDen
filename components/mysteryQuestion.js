@@ -21,7 +21,7 @@ const MysteryQuestion = (props) => {
                 shadow="2xl" 
                 height="20vh" 
                 width="60vw" >
-            <Text textAlign="center" fontSize={{base: "1xl", lg: "4xl"}}  fontFamily="fantasy"  textShadow="dark-lg">What is the man's best invention? </Text>
+            <Text textAlign="center" fontSize={{base: "1xl", lg: "4xl"}}  fontFamily="cursive"  textShadow="dark-lg">What is the man's best invention? </Text>
             <Flex>
                 <Input margin="2vh" 
                     width="30vw" 
@@ -47,8 +47,9 @@ const MysteryQuestion = (props) => {
                     width="60vw"
                     height="60vh">
             <Flex onClick={e => e.stopPropagation()} flexDir="column" justifyContent="center" alignItems="center" width="55vw" padding="2vw">
-                <Text alignSelf="center" fontSize={{base: "2xl", lg: "5xl"}}  fontFamily="fantasy"  textShadow="dark-lg" marginBottom="5vh">{answer == true ? "Nice job V" : "WRONG, correct answer:"}</Text>
-                <Image src="/images/moto2.jpg" height="40vh" width="30vh" borderRadius="full" boxShadow="dark-lg"></Image>
+                <Text alignSelf="center" fontSize={{base: "2xl", lg: "5xl"}}  fontFamily="cursive"  textShadow="dark-lg" marginBottom="5vh">{answer == true ? "Nice job V" : "WRONG, correct answer:"}</Text>
+    {/* <Image src="/images/moto2.jpg" height="40vh" width="30vh" borderRadius="full" boxShadow="dark-lg"></Image> */}
+               <img class="reversecolor" src="images/moto2.svg" width="500vh" borderRadius="full" boxShadow="dark-lg"></img>
             </Flex>    
             <ToHome></ToHome>
         </Flex>

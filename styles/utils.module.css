@@ -8,6 +8,7 @@
 }
 
 .main {
+  background-color: #00000000;
   padding-top: 3rem;
   flex: 1;
   display: flex;
@@ -140,7 +141,8 @@
 }
 
 .heading {
-  color: black; 
+  color: white; 
+background: #000000;
   text-align: center; 
   text-shadow: 1px 1px 2px gray;
 }
@@ -148,9 +150,16 @@
 
 @media (max-width: 500px) { 
   .heading {
-    color: black; 
+    color: white; 
     text-align: center; 
     text-shadow: 1px 1px 2px gray;
     font-size: 20px;
   }
+}
+
+.reverse {
+	-webkit-filter: grayscale(1) invert(1);
+	filter: grayscale(1) invert(1);
+   /* -webkit-filter: invert(100%); */
+   /* filter: invert(100%); */
 }

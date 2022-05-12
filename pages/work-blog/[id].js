@@ -1,6 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import {useState} from "react"
 import postStyles from '../../styles/posts.module.css'
+// import postStyles from '../../styles/posts3.module.css'
 import Image from "next/image"
 import { Flex, Heading, Center, Box, Text } from '@chakra-ui/layout'
 import Footer from "../../components/footer"
@@ -14,21 +15,21 @@ export default function Post({ postData }) {
     (position == "center" ? setPosition("left") : setPosition("center"));
   }
     return (
-      <Layout title={postData.title} icon1="/icons/contour-de-vue-cote-hibou-retourne.svg" icon2="/icons/contour-de-vue-cote-hibou.svg">
-        <Flex flexDirection="column" width="200vh">
+    <Layout title={postData.title} style={postStyles.header} icon1="/icons/contour-de-vue-cote-hibou-retourne.svg" icon2="/icons/contour-de-vue-cote-hibou.svg">
+        <Flex flexDirection="column" width="200vh" className={postStyles.body}>
         {/* <Center className={postStyles.hobbyPostHeader}>
             <Box padding="0.3em"><Image src="/icons/contour-de-vue-cote-hibou-retourne.svg" height={80} width={80} alt="Owl" /></Box> 
                 <Heading as="h1" >{postData.title}</Heading>
             <Box padding="1em"><Image src="/icons/contour-de-vue-cote-hibou.svg" height={80} width={80} alt="Owl" /></Box> 
         </Center> */}
-        <Center className={postStyles.hobbyPostHeader} marginBottom="2em">
+        <Center className={postStyles.blog} marginBottom="2em">
             <strong>
                 By  {postData.author}
             </strong>
             <span>
             ,&nbsp;&nbsp;
                 {postData.date}
-            </span>
+            // </span>
         </Center>
         <ToHome></ToHome>
           {/* <Date dateString={postData.date} /> */}  
@@ -58,7 +59,6 @@ export default function Post({ postData }) {
               </Flex>
             </Text>
           </Flex>
-        <Footer></Footer>
         </Flex>
       </Layout>
     )

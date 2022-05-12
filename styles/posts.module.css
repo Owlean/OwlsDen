@@ -1,294 +1,372 @@
-
 .hobbyPostHeader strong { 
-        /* color: #1e847f;  */
-        color: #000;
-        font-style: italic; 
-        font-size: 20px; 
-        margin-top: 5px;
-        margin-bottom: 20px; 
-        text-align: center; 
-        text-shadow: 0 1px 1px #fff;
+	/* color: #1e847f;  */
+	color: #000;
+	font-style: italic; 
+	font-size: 20px; 
+	margin-top: 5px;
+	margin-bottom: 20px; 
+	text-align: center; 
+	text-shadow: 0 1px 1px #fff;
 }
-     
+
 .hobbyPostHeader h1 {
-    margin: 0.7em;
-    font-size: 50px;
-    text-shadow: 1px 1px 0 #000;
-    color: #217969; 
-    font-family: cursive; 
-    text-transform: uppercase;
-    text-align: center; 
-    text-shadow: 1px 1px 2px #082b34;
+	margin: 0.7em;
+	font-size: 50px;
+	text-shadow: 1px 1px 0 #000;
+	color: #217969; 
+	font-family: cursive; 
+	text-transform: uppercase;
+	text-align: center; 
+	text-shadow: 1px 1px 2px #082b34;
 }
 
 .hobbyPostHeader span { 
-    font-style: italic; 
-    /* color: #1e847f;  */
-    color: #000;
-    font-size: 18px; 
-    margin-top: 5px; 
-    margin-bottom: 20px; 
-    text-align: center; 
-    text-shadow: 0 1px 1px #fff;
-  }
+	font-style: italic; 
+	/* color: #1e847f;  */
+	color: #000;
+	font-size: 18px; 
+	margin-top: 5px; 
+	margin-bottom: 20px; 
+	text-align: center; 
+	text-shadow: 0 1px 1px #fff;
+}
 
-
+.hobbyPost {
+	color: #ffffffff; 
+}
 
 .hobbyPost li {
-    color: #696969; 
-    font-size: 15px; 
-    font-family: 'Droid serif', serif;
-    font-weight: 10; 
-    font-style: italic; 
-    line-height: 20px; 
-    margin: 0 0.7px;
-    /* text-align: left; */
-  }
-  
-  .hobbyPost h1 {
-    color: #d1af76; 
-    font-size: 40px; 
-    font-family: "Great Vibes";
-    margin-bottom: 0.8em;
-    margin-top: 1em;
-    text-transform: uppercase; 
-    line-height: 30px; 
-    font-weight: normal; 
-    /* text-align: left;  */
-    text-shadow: 0 1px 1px #fff; 
-  }
-  
-  .hobbyPost h2 { 
-    color: #c8ad7f ; 
-    font-size: 30px; 
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-family: "Great Vibes"; 
-    text-transform: uppercase; 
-    line-height: 20px; 
-    font-weight: normal; 
-    /* text-align: left;  */
-    text-shadow: 0 1px 1px #fff; 
-  }
-  
-  .hobbyPost h3 {
-    color: #c1ab99; 
-    margin-top: 1em;
-    font-family: "Great Vibes";  
-    font-size: 20px; 
-    line-height: 10px; 
-    text-transform: uppercase; 
-    /* text-align: left;  */
-  }
-
-  .hobbyPost h3 a {
-    color: black; 
-    margin-top: 1em;
-    font-family: "Great Vibes";  
-    font-size: 20px; 
-    line-height: 10px; 
-    text-transform: uppercase; 
-    /* text-align: left;  */
-  }
-  
-  .hobbyPost p { 
-    color: #7a7c7f; 
-    font-size: 15px; 
-    font-family: "Libre Baskerville", serif; 
-    line-height: 25px; 
-    /* text-align: left; */
-    text-shadow: 0 1px 1px #fff; 
-    padding-top: 20px; 
-  }
-  .hobbyPost strong { 
-    color: #1e847f; 
-    font-style: italic; 
-    font-size: 15px; 
-    margin-top: 20px; 
-    /* text-align: center;  */
-    text-shadow: 0 1px 1px #fff;
-  }
-  
-  .hobbyPost span { 
-    font-style: italic; 
-    color: #1e847f; 
-    font-size: 18px; 
-    margin-top: 20px; 
-    /* text-align: center;  */
-    text-shadow: 0 1px 1px #fff;
-  }
-  
-  .hobbyPost a { 
-    color: #990000; 
-    text-decoration: none; 
-  }
-  
-  .hobbyPost a:hover { text-decoration: underline }
-
-
-.hobbyPostIndex h2 {
-  color: #d1af76; 
-  font-size: 20px; 
-  font-family: "Great Vibes";
-  text-transform: uppercase; 
-  font-weight: normal; 
-  /* text-align: left;  */
-  text-shadow: 0 1px 1px #fff; 
+	font-size: 15px; 
+	/* font-family: 'Droid serif', serif; */
+	font-weight: 10; 
+	/* font-style: italic; */ 
+	line-height: 20px; 
+	padding-left: 20px;
+	margin: 0 0.7px;
+	/* text-align: left; */
 }
-
-.hobbyPostIndex a:hover {
-   text-decoration: underline;
-   color: #1e847f;
+.hobbyPost li::marker {
+	color: white;
+	font-size: 1.5em;
 }
-
-.hobbyPostIndex span { 
-  font-style: italic; 
-  color: #1e847f; 
-  font-size: 18px; 
-  /* text-align: center;  */
-  text-shadow: 0 1px 1px #fff;
-}
-
-@media (max-width: 500px) { 
-  .hobbyPostHeader strong { 
-    /* color: #1e847f;  */
-    color: #000;
-    font-style: italic; 
-    font-size: 0.7em; 
-    text-align: center; 
-    margin-left: 1em;
-    text-shadow: 0 1px 1px #fff;
-}
- 
-.hobbyPostHeader h1 {
-margin: 0.7em;
-font-size: 1em;
-text-shadow: 1px 1px 0 #000;
-color: #217969; 
-font-family: cursive; 
-text-transform: uppercase;
-text-align: center; 
-text-shadow: 1px 1px 2px #082b34;
-}
-
-.hobbyPostHeader span { 
-font-style: italic; 
-/* color: #1e847f;  */
-color: #000;
-font-size: 0.6em; 
-margin-right: 1em; 
-text-align: center; 
-text-shadow: 0 1px 1px #fff;
-}
-
-
-
-.hobbyPost li {
-color: #696969; 
-font-size: 0.6em; 
-font-family: 'Droid serif', serif;
-font-weight: 10; 
-font-style: italic; 
-line-height: 1.3em; 
-margin: 0 0.7px;
-/* text-align: left; */
-}
-
+ /* { */
+	/* color: #ffff; */
+	/* list-style-type: circle; */
+/* } */
 .hobbyPost h1 {
-color: #d1af76; 
-font-size: 0.8em; 
-font-family: "Great Vibes";
-margin-bottom: 1em;
-margin-top: 1em;
-text-transform: uppercase; 
-line-height: 1.2em; 
-font-weight: normal; 
-/* text-align: left;  */
-text-shadow: 0 1px 1px #fff; 
+	color: #d1af76; 
+	font-size: 40px; 
+	font-family: "Great Vibes";
+	margin-bottom: 0.8em;
+	margin-top: 1em;
+	text-transform: uppercase; 
+	line-height: 30px; 
+	font-weight: normal; 
+	/* text-align: left;  */
+	text-shadow: 0 1px 1px #fff; 
 }
 
 .hobbyPost h2 { 
-color: #c8ad7f ; 
-font-size: 0.75em; 
-margin-top: 0.3em;
-font-family: "Great Vibes"; 
-text-transform: uppercase; 
-line-height: 1.2em; 
-font-weight: normal; 
-/* text-align: left;  */
-text-shadow: 0 1px 1px #fff; 
+	color: #c8ad7f ; 
+	font-size: 30px; 
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: "Great Vibes"; 
+	text-transform: uppercase; 
+	line-height: 20px; 
+	font-weight: normal; 
+	/* text-align: left;  */
+	text-shadow: 0 1px 1px #fff; 
 }
 
 .hobbyPost h3 {
-color: #c1ab99; 
-margin-top: 0.3em;
-font-family: "Great Vibes";  
-font-size: 0.7em; 
-line-height: 1.2em; 
-text-transform: uppercase; 
-/* text-align: left;  */
+	color: #c1ab99; 
+	margin-top: 1em;
+	font-family: "Great Vibes";  
+	font-size: 20px; 
+	line-height: 10px; 
+	text-transform: uppercase; 
+	/* text-align: left;  */
 }
 
 .hobbyPost h3 a {
-color: black; 
-margin-top: 0.3em;
-font-family: "Great Vibes";  
-font-size: 0.7em; 
-line-height: 1.2em; 
-text-transform: uppercase; 
-/* text-align: left;  */
+	color: black; 
+	margin-top: 1em;
+	font-family: "Great Vibes";  
+	font-size: 20px; 
+	line-height: 10px; 
+	text-transform: uppercase; 
+	/* text-align: left;  */
 }
 
 .hobbyPost p { 
-color: #7a7c7f; 
-font-size: 0.6em; 
-font-family: "Libre Baskerville", serif; 
-line-height: 1.2em; 
-/* text-align: left; */
-text-shadow: 0 1px 1px #fff; 
-padding-top: 1.2em; 
+	font-size: 15px; 
+	font-family: "Libre Baskerville", serif; 
+	line-height: 25px; 
+	/* text-align: left; */
+	padding-top: 20px; 
 }
 .hobbyPost strong { 
-color: #1e847f; 
-font-style: italic; 
-font-size: 0.65em; 
-margin-top: 1.2em; 
-/* text-align: center;  */
-text-shadow: 0 1px 1px #fff;
+	color: #1e847f; 
+	font-style: italic; 
+	font-size: 15px; 
+	margin-top: 20px; 
+	/* text-align: center;  */
+	text-shadow: 0 1px 1px #fff;
 }
 
 .hobbyPost span { 
-font-style: italic; 
-color: #1e847f; 
-font-size: 0.6em; 
-margin-top: 1.2em; 
-/* text-align: center;  */
-text-shadow: 0 1px 1px #fff;
+	font-style: italic; 
+	color: #1e847f; 
+	font-size: 18px; 
+	margin-top: 20px; 
+	/* text-align: center;  */
+	text-shadow: 0 1px 1px #fff;
 }
 
 .hobbyPost a { 
-color: #990000; 
-text-decoration: none; 
-font-size: 0.62em;
-line-height: 1em; 
+	color: #990000; 
+	text-decoration: none; 
 }
 
 .hobbyPost a:hover { text-decoration: underline }
 
+/* style code block */
+.hobbyPost code {
+	width: 100%; 
+	font-weight: bold;
+	word-wrap: break-word;
+	white-space: pre-line;
+	margin: 0 0.1rem;
+	padding: 0 0.5rem;
+}
+.hobbyPost pre code {
+	background-color: #303030; 
+	width: 100%; 
+	word-wrap: break-word;
+	white-space: pre-line;
+	display: inline-block;
+	margin: 0 0.1rem;
+	padding: 0 0.5rem;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class="token string"] {
+	color: #B57BA6;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class="token punctuation"] {
+	color: white;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class^="token keyword"] {
+	color: #3E7CB1;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class="token number"] {
+	color: purple;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class^="token method"] {
+	color: green;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class^="token function"] {
+	color: #9EE493;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class^="token literal-property"] {
+	color: green;
+	font-size: 16px; 
+	text-shadow: none;
+}
+ 
+.hobbyPost  code span[class^="token method function property-access"] {
+	color: green;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class="token tag"] {
+	color: #247BA0;
+	font-size: 16px; 
+	text-shadow: none;
+}
+.hobbyPost  code span[class="token attr-name"] {
+	color: #9EE493;
+	font-size: 16px; 
+	text-shadow: none;
+}
 
-.hobbyPostIndex a {
-color: #d1af76; 
-font-size: 0.6em; 
-font-family: "Great Vibes";
-text-transform: uppercase; 
-line-height: 40px; 
-font-weight: normal; 
-/* text-align: left;  */
-text-shadow: 0 1px 1px #fff; 
+.hobbyPostIndex h2 {
+	color: #d1af76; 
+	font-size: 20px; 
+	font-family: "Great Vibes";
+	text-transform: uppercase; 
+	font-weight: normal; 
+	/* text-align: left;  */
+	text-shadow: 0 1px 1px #fff; 
 }
 
 .hobbyPostIndex a:hover {
-text-decoration: underline;
-color: #1e847f;
+	text-decoration: underline;
+	color: #1e847f;
 }
+
+.hobbyPostIndex span { 
+	font-style: italic; 
+	color: #1e847f; 
+	font-size: 18px; 
+	/* text-align: center;  */
+	text-shadow: 0 1px 1px #fff;
+}
+
+@media (max-width: 500px) { 
+	.hobbyPostHeader strong { 
+		/* color: #1e847f;  */
+		color: #000;
+		font-style: italic; 
+		font-size: 0.7em; 
+		text-align: center; 
+		margin-left: 1em;
+		text-shadow: 0 1px 1px #fff;
+	}
+
+	.hobbyPostHeader h1 {
+		margin: 0.7em;
+		font-size: 1em;
+		text-shadow: 1px 1px 0 #000;
+		color: #217969; 
+		font-family: cursive; 
+		text-transform: uppercase;
+		text-align: center; 
+		text-shadow: 1px 1px 2px #082b34;
+	}
+
+	.hobbyPostHeader span { 
+		font-style: italic; 
+		/* color: #1e847f;  */
+		color: #000;
+		font-size: 0.6em; 
+		margin-right: 1em; 
+		text-align: center; 
+		text-shadow: 0 1px 1px #fff;
+	}
+
+
+
+	.hobbyPost li {
+		color: #696969; 
+		font-size: 0.6em; 
+		font-family: 'Droid serif', serif;
+		font-weight: 10; 
+		font-style: italic; 
+		line-height: 1.3em; 
+		margin: 0 0.7px;
+		/* text-align: left; */
+	}
+
+	.hobbyPost h1 {
+		color: #d1af76; 
+		font-size: 0.8em; 
+		font-family: "Great Vibes";
+		margin-bottom: 1em;
+		margin-top: 1em;
+		text-transform: uppercase; 
+		line-height: 1.2em; 
+		font-weight: normal; 
+		/* text-align: left;  */
+		text-shadow: 0 1px 1px #fff; 
+	}
+
+	.hobbyPost h2 { 
+		color: #c8ad7f ; 
+		font-size: 0.75em; 
+		margin-top: 0.3em;
+		font-family: "Great Vibes"; 
+		text-transform: uppercase; 
+		line-height: 1.2em; 
+		font-weight: normal; 
+		/* text-align: left;  */
+		text-shadow: 0 1px 1px #fff; 
+	}
+
+	.hobbyPost h3 {
+		color: #c1ab99; 
+		margin-top: 0.3em;
+		font-family: "Great Vibes";  
+		font-size: 0.7em; 
+		line-height: 1.2em; 
+		text-transform: uppercase; 
+		/* text-align: left;  */
+	}
+
+	.hobbyPost h3 a {
+		color: black; 
+		margin-top: 0.3em;
+		font-family: "Great Vibes";  
+		font-size: 0.7em; 
+		line-height: 1.2em; 
+		text-transform: uppercase; 
+		/* text-align: left;  */
+	}
+
+	.hobbyPost p { 
+		color: #7a7c7f; 
+		font-size: 0.6em; 
+		font-family: "Libre Baskerville", serif; 
+		line-height: 1.2em; 
+		/* text-align: left; */
+		text-shadow: 0 1px 1px #fff; 
+		padding-top: 1.2em; 
+	}
+	.hobbyPost strong { 
+		color: #1e847f; 
+		font-style: italic; 
+		font-size: 0.65em; 
+		margin-top: 1.2em; 
+		/* text-align: center;  */
+		text-shadow: 0 1px 1px #fff;
+	}
+
+	.hobbyPost span { 
+		font-style: italic; 
+		color: #1e847f; 
+		font-size: 0.6em; 
+		margin-top: 1.2em; 
+		/* text-align: center;  */
+		text-shadow: 0 1px 1px #fff;
+	}
+
+	.hobbyPost a { 
+		color: #990000; 
+		text-decoration: none; 
+		font-size: 0.62em;
+		line-height: 1em; 
+	}
+
+	.hobbyPost a:hover { text-decoration: underline }
+
+	
+
+	.hobbyPostIndex a {
+		color: #d1af76; 
+		font-size: 0.6em; 
+		font-family: "Great Vibes";
+		text-transform: uppercase; 
+		line-height: 40px; 
+		font-weight: normal; 
+		/* text-align: left;  */
+		text-shadow: 0 1px 1px #fff; 
+	}
+
+	.hobbyPostIndex a:hover {
+		text-decoration: underline;
+		color: #1e847f;
+	}
 }
