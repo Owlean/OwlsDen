@@ -33,7 +33,7 @@ const MysteryQuestion = (props) => {
                     color="black"
                     onChange={handleChange}>
                 </Input>
-                <Button margin="2vh" width="10vw" fontSize={{base: "10px", lg: "20px"}}  border="2px" borderColor="black" onClick={() => inputCheck()}>Submit</Button>
+                <Button color="black" margin="2vh" width="10vw" fontSize={{base: "10px", lg: "20px"}}  border="2px" borderColor="black" onClick={() => inputCheck()}>Submit</Button>
             </Flex>
         </Flex>
         <Flex  display={typeof(answer) === 'string' ? "none" : "flex"}
