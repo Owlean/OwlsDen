@@ -32,29 +32,28 @@ export default function Post({ postData }) {
         </Center>
         <ToHome></ToHome>
           {/* <Date dateString={postData.date} /> */}  
+        <Center marginTop="1.5em">
+          <Button 
+          border = "0px"
+          _active={{ bg: "#d1af76",transform: "scale(1.2)", boxShadow: "none", borderColor: "d1af76"}} 
+          _hover={{ bg: "#217969", boxShadow: "none", borderColor: "#217969" }} 
+          _focus={{ boxShadow: "none"}}
+          fontFamily="'Droid serif', serif" 
+          bg="#d1af76" 
+          color="217969"  
+          width="10%" 
+          borderColor="#d1af76"
+          boxShadow="none"
+          onClick={()=>HandleClick()} 
+          fontSize={{ base: "10px", md: "20px", lg: "2xs" }}>
+          {position == "center" ? "To Left" : "Center"}
+          </Button>
+        </Center>
+
           <Flex marginBottom="20em">
             <Text overflow="hidden" width="100%" marginRight="7%" marginLeft="15%" marginTop="2em" marginBottom="2em">   
               <Flex>
                 <Text width="85%" textAlign={position} className={postStyles.hobbyPost} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                <Button 
-                  border = "0px"
-                  _active={{ bg: "#d1af76",transform: "scale(1.2)", boxShadow: "none", borderColor: "d1af76"}} 
-                  _hover={{ bg: "#217969", boxShadow: "none", borderColor: "#217969" }} 
-                  _focus={{ boxShadow: "none"}}
-                  fontFamily="'Droid serif', serif" 
-                  bg="#d1af76" 
-                  color="217969"  
-                  width="10%" 
-                  borderColor="#d1af76"
-                  boxShadow="none"
-                  onClick={()=>HandleClick()} 
-                  marginTop="1em" 
-                  marginRight="3%"
-                  marginLeft="2%" 
-                  textAlign="right"
-                  fontSize={{ base: "10px", md: "20px", lg: "2xs" }}>
-                    {position == "center" ? "To Left" : "Center"}
-                </Button>
               </Flex>
             </Text>
           </Flex>

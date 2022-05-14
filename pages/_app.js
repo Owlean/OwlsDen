@@ -1,4 +1,7 @@
 import '../styles/globals.css'
+import '../styles/prism-night-owl.css'
+import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+
 import * as React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
 import { extendTheme } from "@chakra-ui/react"
@@ -30,6 +33,19 @@ const theme = extendTheme({
       100: "#f7fafc",
       // ...
       900: "#1a202c",
+    },
+  },
+  components: {
+    Divider: {
+      defaultProps: { size: "md", colorScheme: "white" },
+      sizes: {
+        lg: { borderWidth: "4px" },
+        md: { borderWidth: "2px" },
+        sm: { borderWidth: "1px" },
+      },
+      // colorSchemes :{
+        // white: { borderColor: "#ffff" },
+      // },
     },
   },
 })

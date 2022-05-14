@@ -15,6 +15,6 @@ title: olw's website
 - Spinner icons -> onclick feature animation
 - Size ToHome component -> increase/deacrease with props
 - 404 with ascii story
-- enhanced colors for blog, code block
 - use open-graph
 - create svg file for TOHOME
+- add return button for articles 
