@@ -1,6 +1,6 @@
 ---
 author: Nonclercq Basile
-title: Classement manga/anime
+title: Template
 date: 21 Aout 2021
 ---
 
